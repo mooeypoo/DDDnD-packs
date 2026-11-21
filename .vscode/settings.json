@@ -1,0 +1,16 @@
+{
+  "json.schemas": [
+    { "fileMatch": ["packs/*/manifest.json"], "url": "https://dddnd.app/schema/v1/manifest.schema.json" },
+    { "fileMatch": ["packs/*/scenarios/*.json"], "url": "https://dddnd.app/schema/v1/scenario.schema.json" },
+    { "fileMatch": ["packs/*/cards/*.json"], "url": "https://dddnd.app/schema/v1/card.schema.json" },
+    { "fileMatch": ["packs/*/events/*.json"], "url": "https://dddnd.app/schema/v1/event.schema.json" },
+    { "fileMatch": ["packs/*/delayed-effects/*.json"], "url": "https://dddnd.app/schema/v1/delayed-effect.schema.json" },
+    { "fileMatch": ["packs/*/scores/*.json"], "url": "https://dddnd.app/schema/v1/score.schema.json" },
+    { "fileMatch": ["packs/*/stakeholders/*.json"], "url": "https://dddnd.app/schema/v1/stakeholder.schema.json" },
+    { "fileMatch": ["packs/*/stakeholder-reaction-rules/*.json"], "url": "https://dddnd.app/schema/v1/stakeholder-reaction-rule.schema.json" },
+    { "fileMatch": ["packs/*/outcome-tiers/*.json"], "url": "https://dddnd.app/schema/v1/outcome-tier.schema.json" },
+    { "fileMatch": ["packs/*/outcome-archetypes/*.json"], "url": "https://dddnd.app/schema/v1/outcome-archetype.schema.json" },
+    { "fileMatch": ["packs/*/classes/*.json"], "url": "https://dddnd.app/schema/v1/class.schema.json" },
+    { "fileMatch": ["packs/*/challenge-modifiers/*.json"], "url": "https://dddnd.app/schema/v1/challenge-modifier.schema.json" }
+  ]
+}
