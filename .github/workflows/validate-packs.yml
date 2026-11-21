@@ -1,51 +1,16 @@
 # Validates and balance-checks every pack in packs/ with DDDnD's own validator,
-# so a pack here is checked by exactly the rules the game uses.
+# through DDDnD's reusable workflow (ADR 0011 in mooeypoo/DDDnD).
 name: Validate packs
 
 on:
   push:
   pull_request:
 
-env:
-  # DDDnD branch or tag whose validator and base pack the packs are checked
-  # against. Use the branch with community pack support until it is merged,
-  # then switch to main (or a release tag).
-  DDDND_REF: feat/content-packs-mvp1
-
 jobs:
   validate:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Check out packs
-        uses: actions/checkout@v4
-        with:
-          path: packs-repo
-
-      - name: Check out DDDnD
-        uses: actions/checkout@v4
-        with:
-          repository: mooeypoo/DDDnD
-          ref: ${{ env.DDDND_REF }}
-          path: dddnd
-
-      - name: Set up Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 24
-          cache: npm
-          cache-dependency-path: dddnd/package-lock.json
-
-      - name: Install DDDnD dependencies
-        working-directory: dddnd
-        run: npm ci --ignore-scripts
-
-      - name: Validate and audit each pack
-        working-directory: dddnd
-        run: |
-          status=0
-          for pack in ../packs-repo/packs/*/; do
-            echo "::group::$(basename "$pack")"
-            npx tsx scripts/validate-content-pack.ts --content-root "$pack" --audit --runs 50 --fail-on-audit-critical || status=1
-            echo "::endgroup::"
-          done
-          exit $status
+    # Until community pack support is merged into DDDnD, both refs point at its
+    # feature branch. After the merge, switch both to the pack-validator-v1 tag.
+    uses: mooeypoo/DDDnD/.github/workflows/validate-pack.yml@feat/content-packs-mvp1
+    with:
+      dddnd-ref: feat/content-packs-mvp1
+      packs: packs/*/

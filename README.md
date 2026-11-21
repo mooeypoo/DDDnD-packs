@@ -61,7 +61,9 @@ Every pack is self-contained. Packs in this repository never share files, and if
      --audit --runs 50 --fail-on-audit-critical
    ```
 
-   The validator checks every file against the game's schema and builds each scenario with the packs it depends on. With `--audit`, it also plays the scenario hundreds of times with a bot and reports balance problems (stakeholders who only ever decline, unfair event pools, dominant strategies). This repository runs the same check on every push.
+   The validator checks every file against the game's schema and builds each scenario with the packs it depends on. With `--audit`, it also plays the scenario hundreds of times with a bot and reports balance problems (stakeholders who only ever decline, unfair event pools, dominant strategies).
+
+   This repository runs the same check on every push, using DDDnD's reusable workflow ([`.github/workflows/validate-packs.yml`](.github/workflows/validate-packs.yml)). Pack repositories elsewhere can use it the same way.
 
 ### Editor support
 
