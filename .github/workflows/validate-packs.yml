@@ -8,9 +8,9 @@ on:
 
 jobs:
   validate:
-    # Until community pack support is merged into DDDnD, both refs point at its
-    # feature branch. After the merge, switch both to the pack-validator-v1 tag.
-    uses: mooeypoo/DDDnD/.github/workflows/validate-pack.yml@feat/content-packs-mvp1
+    # pack-validator-v1 is a moving major tag in DDDnD: it only moves forward
+    # for compatible validator changes. Keep both refs the same.
+    uses: mooeypoo/DDDnD/.github/workflows/validate-pack.yml@pack-validator-v1
     with:
-      dddnd-ref: feat/content-packs-mvp1
+      dddnd-ref: pack-validator-v1
       packs: packs/*/
