@@ -3,7 +3,7 @@
   "schema_version": 1,
   "kind": "extension",
   "id": "gilded_ledger",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "name": "Demo: The Gilded Ledger",
   "description": "A demo extension pack: the DDDnD monolith story retold for a fictional payments company, built on the base pack's scores, cards, and endings.",
   "depends_on": [
@@ -62,6 +62,7 @@
     ],
     "outcome_tiers": [],
     "outcome_archetypes": [],
+    "coupling_rules": [],
     "classes": [],
     "challenge_modifiers": []
   }
