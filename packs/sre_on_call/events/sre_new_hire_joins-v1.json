@@ -1,0 +1,26 @@
+{
+  "$schema": "https://dddnd.app/schema/v1/event.schema.json",
+  "id": "sre_new_hire_joins",
+  "version": 1,
+  "name": "A New SRE Joins the Rotation",
+  "description": "An experienced engineer joins, and brings their old team's best dashboards with them.",
+  "flavor_text": "First week: \"why does this alert exist?\" Good question.",
+  "occurrence_weight": 3,
+  "score_changes": [
+    {
+      "score_id": "sre_on_call_rest",
+      "delta": 4
+    },
+    {
+      "score_id": "sre_observability",
+      "delta": 2
+    }
+  ],
+  "stakeholder_changes": [
+    {
+      "stakeholder_id": "sre_on_call_engineer",
+      "delta": 3
+    }
+  ],
+  "delayed_effect_refs": []
+}

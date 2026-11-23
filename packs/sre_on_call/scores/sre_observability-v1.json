@@ -1,0 +1,9 @@
+{
+  "$schema": "https://dddnd.app/schema/v1/score.schema.json",
+  "id": "sre_observability",
+  "version": 1,
+  "name": "Observability",
+  "short_name": "Sight",
+  "description": "How well the team can see what the system is doing, and why.",
+  "default_value": 34
+}

@@ -1,0 +1,27 @@
+{
+  "$schema": "https://dddnd.app/schema/v1/stakeholder-reaction-rule.schema.json",
+  "id": "sre_on_call_exhausted",
+  "version": 1,
+  "name": "The On-Call Is Exhausted",
+  "description": "Tired people make mistakes in production.",
+  "condition_description": "Rested on-call < 30",
+  "condition": {
+    "target_type": "score",
+    "target_id": "sre_on_call_rest",
+    "operator": "<",
+    "value": 30
+  },
+  "priority": 10,
+  "score_changes": [
+    {
+      "score_id": "sre_availability",
+      "delta": -2
+    }
+  ],
+  "stakeholder_changes": [
+    {
+      "stakeholder_id": "sre_on_call_engineer",
+      "delta": -6
+    }
+  ]
+}

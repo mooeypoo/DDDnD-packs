@@ -1,0 +1,18 @@
+{
+  "$schema": "https://dddnd.app/schema/v1/delayed-effect.schema.json",
+  "id": "sre_slos_take_hold",
+  "version": 1,
+  "name": "The SLOs Take Hold",
+  "description": "Teams start arguing with numbers instead of opinions.",
+  "turns_until_resolution": 2,
+  "score_changes": [
+    {
+      "score_id": "sre_error_budget",
+      "delta": 3
+    },
+    {
+      "score_id": "sre_on_call_rest",
+      "delta": 2
+    }
+  ]
+}

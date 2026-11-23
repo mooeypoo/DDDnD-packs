@@ -1,0 +1,9 @@
+{
+  "$schema": "https://dddnd.app/schema/v1/class.schema.json",
+  "id": "sre_pager_paladin",
+  "version": 1,
+  "name": "Pager Paladin",
+  "description": "Sworn protector of the uptime graph.",
+  "flavor_text": "You answer the page before it finishes ringing.",
+  "score_affinity": "sre_availability"
+}

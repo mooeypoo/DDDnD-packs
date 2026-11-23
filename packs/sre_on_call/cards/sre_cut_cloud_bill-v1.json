@@ -1,0 +1,30 @@
+{
+  "$schema": "https://dddnd.app/schema/v1/card.schema.json",
+  "id": "sre_cut_cloud_bill",
+  "version": 1,
+  "name": "Cut the Cloud Bill",
+  "description": "Shrink the overprovisioned clusters and turn off what looks unused.",
+  "flavor_text": "It looked unused.",
+  "style_tags": [
+    "cost",
+    "short-term"
+  ],
+  "usage_limit": 1,
+  "score_changes": [
+    {
+      "score_id": "sre_availability",
+      "delta": -2
+    },
+    {
+      "score_id": "sre_error_budget",
+      "delta": -2
+    }
+  ],
+  "stakeholder_changes": [
+    {
+      "stakeholder_id": "sre_finance_director",
+      "delta": 6
+    }
+  ],
+  "delayed_effect_refs": []
+}

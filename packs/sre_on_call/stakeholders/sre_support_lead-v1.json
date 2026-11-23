@@ -1,0 +1,17 @@
+{
+  "$schema": "https://dddnd.app/schema/v1/stakeholder.schema.json",
+  "id": "sre_support_lead",
+  "version": 1,
+  "name": "Customer Support Lead",
+  "description": "Hears about every outage first, from the customers who were in the middle of something.",
+  "reaction_rule_refs": [
+    {
+      "id": "sre_support_drowning",
+      "version": 1
+    },
+    {
+      "id": "sre_support_breathes",
+      "version": 1
+    }
+  ]
+}

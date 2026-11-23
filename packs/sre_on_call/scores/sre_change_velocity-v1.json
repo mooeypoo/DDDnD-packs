@@ -1,0 +1,9 @@
+{
+  "$schema": "https://dddnd.app/schema/v1/score.schema.json",
+  "id": "sre_change_velocity",
+  "version": 1,
+  "name": "Change Velocity",
+  "short_name": "Velocity",
+  "description": "How quickly and safely the teams can ship changes.",
+  "default_value": 60
+}

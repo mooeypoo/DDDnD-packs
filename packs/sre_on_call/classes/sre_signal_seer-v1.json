@@ -1,0 +1,9 @@
+{
+  "$schema": "https://dddnd.app/schema/v1/class.schema.json",
+  "id": "sre_signal_seer",
+  "version": 1,
+  "name": "Signal Seer",
+  "description": "Reads the dashboards the way others read tea leaves, but with evidence.",
+  "flavor_text": "You saw the latency creep before anyone else did.",
+  "score_affinity": "sre_observability"
+}

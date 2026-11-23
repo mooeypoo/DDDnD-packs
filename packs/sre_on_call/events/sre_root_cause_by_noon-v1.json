@@ -1,0 +1,26 @@
+{
+  "$schema": "https://dddnd.app/schema/v1/event.schema.json",
+  "id": "sre_root_cause_by_noon",
+  "version": 1,
+  "name": "Root Cause by Noon",
+  "description": "The VP wants a single root cause for yesterday's incident, in writing, by lunch.",
+  "flavor_text": "There were seven causes. Pick one.",
+  "occurrence_weight": 3,
+  "score_changes": [
+    {
+      "score_id": "sre_on_call_rest",
+      "delta": -3
+    },
+    {
+      "score_id": "sre_observability",
+      "delta": 2
+    }
+  ],
+  "stakeholder_changes": [
+    {
+      "stakeholder_id": "sre_on_call_engineer",
+      "delta": -2
+    }
+  ],
+  "delayed_effect_refs": []
+}

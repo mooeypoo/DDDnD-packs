@@ -1,0 +1,18 @@
+{
+  "$schema": "https://dddnd.app/schema/v1/delayed-effect.schema.json",
+  "id": "sre_tracing_insights",
+  "version": 1,
+  "name": "The Traces Tell a Story",
+  "description": "Slow requests finally have a name and an owner.",
+  "turns_until_resolution": 2,
+  "score_changes": [
+    {
+      "score_id": "sre_availability",
+      "delta": 3
+    },
+    {
+      "score_id": "sre_observability",
+      "delta": 2
+    }
+  ]
+}

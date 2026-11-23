@@ -1,0 +1,9 @@
+{
+  "$schema": "https://dddnd.app/schema/v1/score.schema.json",
+  "id": "sre_availability",
+  "version": 1,
+  "name": "Availability",
+  "short_name": "Uptime",
+  "description": "How much of the time the service meets its SLO.",
+  "default_value": 54
+}

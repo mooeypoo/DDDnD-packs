@@ -1,0 +1,13 @@
+{
+  "$schema": "https://dddnd.app/schema/v1/coupling-rule.schema.json",
+  "id": "sre_budget_exhausted",
+  "version": 1,
+  "name": "Error Budget Exhausted",
+  "description": "With no error budget left, every change is a risk: velocity improvements are less effective.",
+  "trigger_score_id": "sre_error_budget",
+  "threshold": 20,
+  "affected_score_ids": [
+    "sre_change_velocity"
+  ],
+  "gain_multiplier": 0.7
+}

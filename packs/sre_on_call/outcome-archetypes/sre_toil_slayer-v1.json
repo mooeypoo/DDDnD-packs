@@ -1,0 +1,21 @@
+{
+  "$schema": "https://dddnd.app/schema/v1/outcome-archetype.schema.json",
+  "id": "sre_toil_slayer",
+  "version": 1,
+  "name": "The Toil Slayer",
+  "description": "You automated away the drudgery, and the rotation got its nights back.",
+  "flavor_text": "The scripts do the boring part now.",
+  "criteria": {
+    "priority": 50,
+    "when": [
+      {
+        "measure": "score_change",
+        "score_ids": [
+          "sre_on_call_rest"
+        ],
+        "operator": ">=",
+        "value": 15
+      }
+    ]
+  }
+}

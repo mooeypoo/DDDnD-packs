@@ -1,0 +1,22 @@
+{
+  "$schema": "https://dddnd.app/schema/v1/stakeholder-reaction-rule.schema.json",
+  "id": "sre_on_call_grateful",
+  "version": 1,
+  "name": "The On-Call Sleeps Through the Night",
+  "description": "A quiet rotation, and someone noticed.",
+  "condition_description": "Rested on-call > 60",
+  "condition": {
+    "target_type": "score",
+    "target_id": "sre_on_call_rest",
+    "operator": ">",
+    "value": 60
+  },
+  "priority": 50,
+  "score_changes": [],
+  "stakeholder_changes": [
+    {
+      "stakeholder_id": "sre_on_call_engineer",
+      "delta": 4
+    }
+  ]
+}

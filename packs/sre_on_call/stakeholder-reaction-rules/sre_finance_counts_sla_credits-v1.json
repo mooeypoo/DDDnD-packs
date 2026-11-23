@@ -1,0 +1,22 @@
+{
+  "$schema": "https://dddnd.app/schema/v1/stakeholder-reaction-rule.schema.json",
+  "id": "sre_finance_counts_sla_credits",
+  "version": 1,
+  "name": "Finance Counts the SLA Credits",
+  "description": "A spent error budget means credits paid back to customers.",
+  "condition_description": "Error budget < 25",
+  "condition": {
+    "target_type": "score",
+    "target_id": "sre_error_budget",
+    "operator": "<",
+    "value": 25
+  },
+  "priority": 10,
+  "score_changes": [],
+  "stakeholder_changes": [
+    {
+      "stakeholder_id": "sre_finance_director",
+      "delta": -5
+    }
+  ]
+}

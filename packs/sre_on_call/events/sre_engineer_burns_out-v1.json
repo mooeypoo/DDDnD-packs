@@ -1,0 +1,37 @@
+{
+  "$schema": "https://dddnd.app/schema/v1/event.schema.json",
+  "id": "sre_engineer_burns_out",
+  "version": 1,
+  "name": "An Engineer Burns Out",
+  "description": "One of the people carrying the pager says they can't do it anymore.",
+  "flavor_text": "The rotation just got shorter, and so did everyone's sleep.",
+  "occurrence_weight": 3,
+  "trigger_condition_description": "Rested on-call < 30",
+  "trigger_condition": {
+    "target_type": "score",
+    "target_id": "sre_on_call_rest",
+    "operator": "<",
+    "value": 30
+  },
+  "score_changes": [
+    {
+      "score_id": "sre_on_call_rest",
+      "delta": -4
+    },
+    {
+      "score_id": "sre_change_velocity",
+      "delta": -3
+    },
+    {
+      "score_id": "sre_availability",
+      "delta": -2
+    }
+  ],
+  "stakeholder_changes": [
+    {
+      "stakeholder_id": "sre_on_call_engineer",
+      "delta": -5
+    }
+  ],
+  "delayed_effect_refs": []
+}

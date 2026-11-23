@@ -1,0 +1,9 @@
+{
+  "$schema": "https://dddnd.app/schema/v1/score.schema.json",
+  "id": "sre_customer_trust",
+  "version": 1,
+  "name": "Customer Trust",
+  "short_name": "Trust",
+  "description": "Whether customers believe the service will be there when they need it.",
+  "default_value": 57
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "https://dddnd.app/schema/v1/delayed-effect.schema.json",
+  "id": "sre_rollback_safety_net",
+  "version": 1,
+  "name": "Rollbacks Become Boring",
+  "description": "A bad deploy is undone in minutes, by a machine.",
+  "turns_until_resolution": 2,
+  "score_changes": [
+    {
+      "score_id": "sre_availability",
+      "delta": 4
+    },
+    {
+      "score_id": "sre_on_call_rest",
+      "delta": 3
+    },
+    {
+      "score_id": "sre_change_velocity",
+      "delta": 3
+    }
+  ]
+}

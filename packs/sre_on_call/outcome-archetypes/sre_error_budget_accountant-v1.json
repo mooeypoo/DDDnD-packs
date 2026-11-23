@@ -1,0 +1,25 @@
+{
+  "$schema": "https://dddnd.app/schema/v1/outcome-archetype.schema.json",
+  "id": "sre_error_budget_accountant",
+  "version": 1,
+  "name": "The Error-Budget Accountant",
+  "description": "You treated reliability as a budget to spend wisely, and kept shipping.",
+  "flavor_text": "Not a penny of unreliability wasted. Not a feature left behind.",
+  "criteria": {
+    "priority": 60,
+    "when": [
+      {
+        "measure": "final_score",
+        "score_id": "sre_error_budget",
+        "operator": ">=",
+        "value": 52
+      },
+      {
+        "measure": "final_score",
+        "score_id": "sre_change_velocity",
+        "operator": ">=",
+        "value": 45
+      }
+    ]
+  }
+}

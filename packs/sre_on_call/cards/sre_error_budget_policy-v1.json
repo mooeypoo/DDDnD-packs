@@ -1,0 +1,38 @@
+{
+  "$schema": "https://dddnd.app/schema/v1/card.schema.json",
+  "id": "sre_error_budget_policy",
+  "version": 1,
+  "name": "Adopt an Error-Budget Policy",
+  "description": "Write down what happens when the budget runs out: reliability work comes first until it recovers.",
+  "flavor_text": "The budget is for spending. The policy says what happens when it's gone.",
+  "style_tags": [
+    "process",
+    "reliability"
+  ],
+  "usage_limit": 1,
+  "score_changes": [
+    {
+      "score_id": "sre_error_budget",
+      "delta": 8
+    },
+    {
+      "score_id": "sre_availability",
+      "delta": 5
+    },
+    {
+      "score_id": "sre_change_velocity",
+      "delta": -3
+    }
+  ],
+  "stakeholder_changes": [
+    {
+      "stakeholder_id": "sre_product_lead",
+      "delta": -3
+    },
+    {
+      "stakeholder_id": "sre_vp_engineering",
+      "delta": 2
+    }
+  ],
+  "delayed_effect_refs": []
+}

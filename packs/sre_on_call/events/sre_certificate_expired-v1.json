@@ -1,0 +1,33 @@
+{
+  "$schema": "https://dddnd.app/schema/v1/event.schema.json",
+  "id": "sre_certificate_expired",
+  "version": 1,
+  "name": "The Certificate Expired",
+  "description": "A TLS certificate nobody owned expires on a Saturday.",
+  "flavor_text": "It was valid for exactly one year. Who knew.",
+  "occurrence_weight": 2,
+  "trigger_condition_description": "Observability < 45",
+  "trigger_condition": {
+    "target_type": "score",
+    "target_id": "sre_observability",
+    "operator": "<",
+    "value": 45
+  },
+  "score_changes": [
+    {
+      "score_id": "sre_availability",
+      "delta": -4
+    },
+    {
+      "score_id": "sre_customer_trust",
+      "delta": -3
+    }
+  ],
+  "stakeholder_changes": [
+    {
+      "stakeholder_id": "sre_support_lead",
+      "delta": -2
+    }
+  ],
+  "delayed_effect_refs": []
+}

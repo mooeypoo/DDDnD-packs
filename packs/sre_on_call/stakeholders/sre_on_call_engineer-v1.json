@@ -1,0 +1,17 @@
+{
+  "$schema": "https://dddnd.app/schema/v1/stakeholder.schema.json",
+  "id": "sre_on_call_engineer",
+  "version": 1,
+  "name": "On-Call Engineer",
+  "description": "Carries the pager this rotation. Has opinions about 3 a.m.",
+  "reaction_rule_refs": [
+    {
+      "id": "sre_on_call_exhausted",
+      "version": 1
+    },
+    {
+      "id": "sre_on_call_grateful",
+      "version": 1
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "https://dddnd.app/schema/v1/outcome-archetype.schema.json",
+  "id": "sre_hero_firefighter",
+  "version": 1,
+  "name": "The Hero Firefighter",
+  "description": "You saved the day, again and again, and the pager ate the people holding it.",
+  "flavor_text": "Every outage had a hero. None of them slept.",
+  "criteria": {
+    "priority": 90,
+    "when": [
+      {
+        "measure": "score_change",
+        "score_ids": [
+          "sre_availability"
+        ],
+        "operator": ">=",
+        "value": 5
+      },
+      {
+        "measure": "score_change",
+        "score_ids": [
+          "sre_on_call_rest"
+        ],
+        "operator": "<=",
+        "value": -8
+      }
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "$schema": "https://dddnd.app/schema/v1/card.schema.json",
+  "id": "sre_feature_freeze",
+  "version": 1,
+  "name": "Call a Feature Freeze",
+  "description": "Stop shipping features until the service is stable again.",
+  "flavor_text": "The safest deploy is the one you didn't do.",
+  "style_tags": [
+    "process",
+    "short-term"
+  ],
+  "usage_limit": 2,
+  "cooldown_turns": 2,
+  "score_changes": [
+    {
+      "score_id": "sre_availability",
+      "delta": 7
+    },
+    {
+      "score_id": "sre_error_budget",
+      "delta": 7
+    },
+    {
+      "score_id": "sre_on_call_rest",
+      "delta": 3
+    },
+    {
+      "score_id": "sre_change_velocity",
+      "delta": -7
+    }
+  ],
+  "stakeholder_changes": [
+    {
+      "stakeholder_id": "sre_product_lead",
+      "delta": -5
+    },
+    {
+      "stakeholder_id": "sre_vp_engineering",
+      "delta": 2
+    }
+  ],
+  "delayed_effect_refs": []
+}

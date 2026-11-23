@@ -1,0 +1,12 @@
+{
+  "$schema": "https://dddnd.app/schema/v1/outcome-archetype.schema.json",
+  "id": "sre_steady_operator",
+  "version": 1,
+  "name": "The Steady Operator",
+  "description": "You kept the lights on and the teams moving, without a grand plan or a disaster.",
+  "flavor_text": "Nobody wrote a postmortem about your quarter. That's the point.",
+  "criteria": {
+    "priority": 0,
+    "when": []
+  }
+}

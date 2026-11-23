@@ -1,0 +1,27 @@
+{
+  "$schema": "https://dddnd.app/schema/v1/stakeholder-reaction-rule.schema.json",
+  "id": "sre_support_drowning",
+  "version": 1,
+  "name": "Support Is Drowning",
+  "description": "When trust drops, the ticket queue floods and support burns out.",
+  "condition_description": "Customer trust < 40",
+  "condition": {
+    "target_type": "score",
+    "target_id": "sre_customer_trust",
+    "operator": "<",
+    "value": 40
+  },
+  "priority": 10,
+  "score_changes": [
+    {
+      "score_id": "sre_on_call_rest",
+      "delta": -1
+    }
+  ],
+  "stakeholder_changes": [
+    {
+      "stakeholder_id": "sre_support_lead",
+      "delta": -5
+    }
+  ]
+}

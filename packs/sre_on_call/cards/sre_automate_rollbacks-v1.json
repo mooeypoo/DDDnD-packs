@@ -1,0 +1,35 @@
+{
+  "$schema": "https://dddnd.app/schema/v1/card.schema.json",
+  "id": "sre_automate_rollbacks",
+  "version": 1,
+  "name": "Automate Rollbacks",
+  "description": "Let the deploy pipeline undo a bad release on its own when error rates jump.",
+  "flavor_text": "Rolling back should be the most boring thing you do.",
+  "style_tags": [
+    "automation",
+    "reliability"
+  ],
+  "usage_limit": 1,
+  "score_changes": [
+    {
+      "score_id": "sre_change_velocity",
+      "delta": -2
+    },
+    {
+      "score_id": "sre_observability",
+      "delta": 2
+    }
+  ],
+  "stakeholder_changes": [
+    {
+      "stakeholder_id": "sre_finance_director",
+      "delta": -2
+    }
+  ],
+  "delayed_effect_refs": [
+    {
+      "id": "sre_rollback_safety_net",
+      "version": 1
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "$schema": "https://dddnd.app/schema/v1/event.schema.json",
+  "id": "sre_alert_storm",
+  "version": 1,
+  "name": "Alert Storm",
+  "description": "Hundreds of alerts fire at once, and nobody can tell which one matters.",
+  "flavor_text": "The pager sounds like a slot machine.",
+  "occurrence_weight": 3,
+  "trigger_condition_description": "Rested on-call < 45",
+  "trigger_condition": {
+    "target_type": "score",
+    "target_id": "sre_on_call_rest",
+    "operator": "<",
+    "value": 45
+  },
+  "score_changes": [
+    {
+      "score_id": "sre_on_call_rest",
+      "delta": -4
+    },
+    {
+      "score_id": "sre_observability",
+      "delta": -1
+    }
+  ],
+  "stakeholder_changes": [
+    {
+      "stakeholder_id": "sre_on_call_engineer",
+      "delta": -3
+    }
+  ],
+  "delayed_effect_refs": []
+}

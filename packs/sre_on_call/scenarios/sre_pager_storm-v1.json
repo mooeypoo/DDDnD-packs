@@ -1,0 +1,282 @@
+{
+  "$schema": "https://dddnd.app/schema/v1/scenario.schema.json",
+  "id": "sre_pager_storm",
+  "version": 1,
+  "name": "The Pager Storm",
+  "description": "A growing service pages its on-call team every night. The SLOs are vague, the error budget is nearly spent, and the people holding the pager are running out of sleep. Make the service reliable without burning out the team, or stopping the company from shipping.",
+  "short_description": "Tame a service that pages someone every night, before the rotation burns out.",
+  "flavor_text": "The pager went off during the planning meeting about the pager.",
+  "max_turns": 10,
+  "score_variance": 5,
+  "starting_scores": {
+    "sre_availability": 54,
+    "sre_error_budget": 45,
+    "sre_on_call_rest": 40,
+    "sre_customer_trust": 57,
+    "sre_change_velocity": 60,
+    "sre_observability": 34
+  },
+  "score_refs": [
+    {
+      "id": "sre_availability",
+      "version": 1
+    },
+    {
+      "id": "sre_error_budget",
+      "version": 1
+    },
+    {
+      "id": "sre_on_call_rest",
+      "version": 1
+    },
+    {
+      "id": "sre_customer_trust",
+      "version": 1
+    },
+    {
+      "id": "sre_change_velocity",
+      "version": 1
+    },
+    {
+      "id": "sre_observability",
+      "version": 1
+    }
+  ],
+  "stakeholder_refs": [
+    {
+      "id": "sre_vp_engineering",
+      "version": 1
+    },
+    {
+      "id": "sre_product_lead",
+      "version": 1
+    },
+    {
+      "id": "sre_support_lead",
+      "version": 1
+    },
+    {
+      "id": "sre_finance_director",
+      "version": 1
+    },
+    {
+      "id": "sre_on_call_engineer",
+      "version": 1
+    }
+  ],
+  "card_refs": [
+    {
+      "id": "sre_automate_rollbacks",
+      "version": 1
+    },
+    {
+      "id": "sre_blameless_postmortem",
+      "version": 1
+    },
+    {
+      "id": "sre_canary_releases",
+      "version": 1
+    },
+    {
+      "id": "sre_capacity_planning",
+      "version": 1
+    },
+    {
+      "id": "sre_chaos_drill",
+      "version": 1
+    },
+    {
+      "id": "sre_cut_cloud_bill",
+      "version": 1
+    },
+    {
+      "id": "sre_define_slos",
+      "version": 1
+    },
+    {
+      "id": "sre_distributed_tracing",
+      "version": 1
+    },
+    {
+      "id": "sre_embed_with_product",
+      "version": 1
+    },
+    {
+      "id": "sre_error_budget_policy",
+      "version": 1
+    },
+    {
+      "id": "sre_fair_rotation",
+      "version": 1
+    },
+    {
+      "id": "sre_feature_freeze",
+      "version": 1
+    },
+    {
+      "id": "sre_hero_fix",
+      "version": 1
+    },
+    {
+      "id": "sre_honest_status_page",
+      "version": 1
+    },
+    {
+      "id": "sre_incident_commanders",
+      "version": 1
+    },
+    {
+      "id": "sre_pay_down_toil",
+      "version": 1
+    },
+    {
+      "id": "sre_quick_patch",
+      "version": 1
+    },
+    {
+      "id": "sre_retire_flaky_endpoint",
+      "version": 1
+    },
+    {
+      "id": "sre_ship_anyway",
+      "version": 1
+    },
+    {
+      "id": "sre_support_dashboard",
+      "version": 1
+    },
+    {
+      "id": "sre_tune_alerts",
+      "version": 1
+    },
+    {
+      "id": "sre_write_runbooks",
+      "version": 1
+    }
+  ],
+  "event_refs": [
+    {
+      "id": "sre_alert_storm",
+      "version": 1
+    },
+    {
+      "id": "sre_bill_review",
+      "version": 1
+    },
+    {
+      "id": "sre_cascading_failure",
+      "version": 1
+    },
+    {
+      "id": "sre_certificate_expired",
+      "version": 1
+    },
+    {
+      "id": "sre_customer_praise",
+      "version": 1
+    },
+    {
+      "id": "sre_engineer_burns_out",
+      "version": 1
+    },
+    {
+      "id": "sre_launch_traffic",
+      "version": 1
+    },
+    {
+      "id": "sre_new_hire_joins",
+      "version": 1
+    },
+    {
+      "id": "sre_postmortem_shared",
+      "version": 1
+    },
+    {
+      "id": "sre_quiet_week",
+      "version": 1
+    },
+    {
+      "id": "sre_region_down",
+      "version": 1
+    },
+    {
+      "id": "sre_root_cause_by_noon",
+      "version": 1
+    },
+    {
+      "id": "sre_three_am_outage",
+      "version": 1
+    },
+    {
+      "id": "sre_vendor_ships_fix",
+      "version": 1
+    }
+  ],
+  "outcome_tier_refs": [
+    {
+      "id": "triumph",
+      "version": 1
+    },
+    {
+      "id": "success",
+      "version": 1
+    },
+    {
+      "id": "survival",
+      "version": 1
+    },
+    {
+      "id": "struggle",
+      "version": 1
+    },
+    {
+      "id": "collapse",
+      "version": 1
+    }
+  ],
+  "outcome_archetype_refs": [
+    {
+      "id": "sre_hero_firefighter",
+      "version": 1
+    },
+    {
+      "id": "sre_pager_haunted",
+      "version": 1
+    },
+    {
+      "id": "sre_reliability_architect",
+      "version": 1
+    },
+    {
+      "id": "sre_error_budget_accountant",
+      "version": 1
+    },
+    {
+      "id": "sre_toil_slayer",
+      "version": 1
+    },
+    {
+      "id": "sre_steady_operator",
+      "version": 1
+    }
+  ],
+  "coupling_rule_refs": [
+    {
+      "id": "sre_burnout_spiral",
+      "version": 1
+    },
+    {
+      "id": "sre_budget_exhausted",
+      "version": 1
+    },
+    {
+      "id": "sre_flying_blind",
+      "version": 1
+    }
+  ],
+  "balance_targets": {
+    "win_rate_min": 0.3,
+    "win_rate_max": 0.6,
+    "max_critical_findings": 0
+  }
+}

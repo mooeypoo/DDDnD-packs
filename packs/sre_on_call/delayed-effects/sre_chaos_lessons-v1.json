@@ -1,0 +1,18 @@
+{
+  "$schema": "https://dddnd.app/schema/v1/delayed-effect.schema.json",
+  "id": "sre_chaos_lessons",
+  "version": 1,
+  "name": "Lessons from the Drill",
+  "description": "The weaknesses the drill found get fixed before a real outage finds them.",
+  "turns_until_resolution": 2,
+  "score_changes": [
+    {
+      "score_id": "sre_availability",
+      "delta": 6
+    },
+    {
+      "score_id": "sre_on_call_rest",
+      "delta": 3
+    }
+  ]
+}

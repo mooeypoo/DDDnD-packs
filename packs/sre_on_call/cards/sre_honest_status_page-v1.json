@@ -1,0 +1,39 @@
+{
+  "$schema": "https://dddnd.app/schema/v1/card.schema.json",
+  "id": "sre_honest_status_page",
+  "version": 1,
+  "name": "Publish an Honest Status Page",
+  "description": "Tell customers what is broken, while it is broken.",
+  "flavor_text": "\"Some users may experience\" was retired with honors.",
+  "style_tags": [
+    "communication",
+    "trust"
+  ],
+  "usage_limit": 2,
+  "cooldown_turns": 1,
+  "score_changes": [
+    {
+      "score_id": "sre_customer_trust",
+      "delta": 7
+    },
+    {
+      "score_id": "sre_observability",
+      "delta": 1
+    },
+    {
+      "score_id": "sre_on_call_rest",
+      "delta": -1
+    }
+  ],
+  "stakeholder_changes": [
+    {
+      "stakeholder_id": "sre_support_lead",
+      "delta": 4
+    },
+    {
+      "stakeholder_id": "sre_product_lead",
+      "delta": -1
+    }
+  ],
+  "delayed_effect_refs": []
+}

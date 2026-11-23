@@ -1,0 +1,18 @@
+{
+  "$schema": "https://dddnd.app/schema/v1/delayed-effect.schema.json",
+  "id": "sre_toil_receding",
+  "version": 1,
+  "name": "Toil Recedes",
+  "description": "The hours that went into manual work go into engineering.",
+  "turns_until_resolution": 2,
+  "score_changes": [
+    {
+      "score_id": "sre_on_call_rest",
+      "delta": 4
+    },
+    {
+      "score_id": "sre_change_velocity",
+      "delta": 3
+    }
+  ]
+}

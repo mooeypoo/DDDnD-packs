@@ -1,0 +1,38 @@
+{
+  "$schema": "https://dddnd.app/schema/v1/card.schema.json",
+  "id": "sre_fair_rotation",
+  "version": 1,
+  "name": "Rotate the Pager Fairly",
+  "description": "Spread the on-call load, add a secondary, and give time off after a bad night.",
+  "flavor_text": "The pager was never meant to be one person's personality.",
+  "style_tags": [
+    "on-call",
+    "culture"
+  ],
+  "usage_limit": 1,
+  "score_changes": [
+    {
+      "score_id": "sre_on_call_rest",
+      "delta": 8
+    },
+    {
+      "score_id": "sre_availability",
+      "delta": 1
+    },
+    {
+      "score_id": "sre_change_velocity",
+      "delta": -2
+    }
+  ],
+  "stakeholder_changes": [
+    {
+      "stakeholder_id": "sre_on_call_engineer",
+      "delta": 4
+    },
+    {
+      "stakeholder_id": "sre_finance_director",
+      "delta": -1
+    }
+  ],
+  "delayed_effect_refs": []
+}

@@ -1,0 +1,38 @@
+{
+  "$schema": "https://dddnd.app/schema/v1/card.schema.json",
+  "id": "sre_embed_with_product",
+  "version": 1,
+  "name": "Embed an SRE with a Product Team",
+  "description": "Put reliability expertise in the room where features are designed.",
+  "flavor_text": "Reliability is a feature. Now someone says so in planning.",
+  "style_tags": [
+    "culture",
+    "delivery"
+  ],
+  "usage_limit": 1,
+  "score_changes": [
+    {
+      "score_id": "sre_change_velocity",
+      "delta": 4
+    },
+    {
+      "score_id": "sre_error_budget",
+      "delta": 4
+    },
+    {
+      "score_id": "sre_customer_trust",
+      "delta": 2
+    },
+    {
+      "score_id": "sre_on_call_rest",
+      "delta": -1
+    }
+  ],
+  "stakeholder_changes": [
+    {
+      "stakeholder_id": "sre_product_lead",
+      "delta": 3
+    }
+  ],
+  "delayed_effect_refs": []
+}

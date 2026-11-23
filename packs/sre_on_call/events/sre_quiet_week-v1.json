@@ -1,0 +1,33 @@
+{
+  "$schema": "https://dddnd.app/schema/v1/event.schema.json",
+  "id": "sre_quiet_week",
+  "version": 1,
+  "name": "A Quiet Week",
+  "description": "Nothing pages. Nobody is sure what to do with the time.",
+  "flavor_text": "Someone checks the pager is still on.",
+  "occurrence_weight": 3,
+  "trigger_condition_description": "Availability > 60",
+  "trigger_condition": {
+    "target_type": "score",
+    "target_id": "sre_availability",
+    "operator": ">",
+    "value": 60
+  },
+  "score_changes": [
+    {
+      "score_id": "sre_on_call_rest",
+      "delta": 5
+    },
+    {
+      "score_id": "sre_customer_trust",
+      "delta": 2
+    }
+  ],
+  "stakeholder_changes": [
+    {
+      "stakeholder_id": "sre_on_call_engineer",
+      "delta": 2
+    }
+  ],
+  "delayed_effect_refs": []
+}

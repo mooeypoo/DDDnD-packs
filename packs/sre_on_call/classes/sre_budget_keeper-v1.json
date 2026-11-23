@@ -1,0 +1,9 @@
+{
+  "$schema": "https://dddnd.app/schema/v1/class.schema.json",
+  "id": "sre_budget_keeper",
+  "version": 1,
+  "name": "Budget Keeper",
+  "description": "Keeper of the error budget, and of the policy that spends it.",
+  "flavor_text": "You know exactly how much unreliability is left, to the minute.",
+  "score_affinity": "sre_error_budget"
+}

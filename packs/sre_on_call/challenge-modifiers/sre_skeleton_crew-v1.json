@@ -1,0 +1,12 @@
+{
+  "$schema": "https://dddnd.app/schema/v1/challenge-modifier.schema.json",
+  "id": "sre_skeleton_crew",
+  "version": 1,
+  "name": "Skeleton Crew",
+  "description": "Half the rotation is on leave. The on-call starts 15 lower and observability 5 lower.",
+  "flavor_text": "Two people, one pager, and a lot of coffee.",
+  "score_adjustments": {
+    "sre_on_call_rest": -15,
+    "sre_observability": -5
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "$schema": "https://dddnd.app/schema/v1/event.schema.json",
+  "id": "sre_three_am_outage",
+  "version": 1,
+  "name": "The 3 a.m. Outage",
+  "description": "The service goes down in the middle of the night, and the pager goes off.",
+  "flavor_text": "The phone lights up the ceiling.",
+  "occurrence_weight": 5,
+  "score_changes": [
+    {
+      "score_id": "sre_availability",
+      "delta": -5
+    },
+    {
+      "score_id": "sre_on_call_rest",
+      "delta": -4
+    },
+    {
+      "score_id": "sre_customer_trust",
+      "delta": -2
+    }
+  ],
+  "stakeholder_changes": [
+    {
+      "stakeholder_id": "sre_on_call_engineer",
+      "delta": -3
+    }
+  ],
+  "delayed_effect_refs": []
+}

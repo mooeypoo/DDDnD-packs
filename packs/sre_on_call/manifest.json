@@ -1,0 +1,164 @@
+{
+  "$schema": "https://dddnd.app/schema/v1/manifest.schema.json",
+  "schema_version": 1,
+  "kind": "extension",
+  "id": "sre_on_call",
+  "version": "1.0.0",
+  "name": "SRE: The Pager Storm",
+  "description": "A second domain for DDDnD: site reliability engineering and incident response. Its own scores (availability, error budget, a rested on-call…), council, cards, events, endings, classes and challenge modifiers, on the base pack's outcome tiers.",
+  "depends_on": [
+    {
+      "pack_id": "base",
+      "version": "1.0.0"
+    }
+  ],
+  "base_url": ".",
+  "license": "GPL-3.0-only",
+  "authors": [
+    {
+      "name": "Moriel Schottlender",
+      "url": "https://moriel.tech"
+    }
+  ],
+  "pack_homepage_url": "https://github.com/mooeypoo/DDDnD-packs/tree/main/packs/sre_on_call",
+  "scenarios": [
+    {
+      "id": "sre_pager_storm",
+      "version": 1
+    }
+  ],
+  "classes": [
+    {
+      "id": "sre_pager_paladin",
+      "version": 1
+    },
+    {
+      "id": "sre_signal_seer",
+      "version": 1
+    },
+    {
+      "id": "sre_toil_druid",
+      "version": 1
+    },
+    {
+      "id": "sre_budget_keeper",
+      "version": 1
+    }
+  ],
+  "challenge_modifiers": [
+    {
+      "id": "sre_launch_week",
+      "version": 1
+    },
+    {
+      "id": "sre_skeleton_crew",
+      "version": 1
+    }
+  ],
+  "tutorials": [],
+  "content": {
+    "scenarios": [
+      "sre_pager_storm-v1.json"
+    ],
+    "cards": [
+      "sre_automate_rollbacks-v1.json",
+      "sre_blameless_postmortem-v1.json",
+      "sre_canary_releases-v1.json",
+      "sre_capacity_planning-v1.json",
+      "sre_chaos_drill-v1.json",
+      "sre_cut_cloud_bill-v1.json",
+      "sre_define_slos-v1.json",
+      "sre_distributed_tracing-v1.json",
+      "sre_embed_with_product-v1.json",
+      "sre_error_budget_policy-v1.json",
+      "sre_fair_rotation-v1.json",
+      "sre_feature_freeze-v1.json",
+      "sre_hero_fix-v1.json",
+      "sre_honest_status_page-v1.json",
+      "sre_incident_commanders-v1.json",
+      "sre_pay_down_toil-v1.json",
+      "sre_quick_patch-v1.json",
+      "sre_retire_flaky_endpoint-v1.json",
+      "sre_ship_anyway-v1.json",
+      "sre_support_dashboard-v1.json",
+      "sre_tune_alerts-v1.json",
+      "sre_write_runbooks-v1.json"
+    ],
+    "stakeholders": [
+      "sre_finance_director-v1.json",
+      "sre_on_call_engineer-v1.json",
+      "sre_product_lead-v1.json",
+      "sre_support_lead-v1.json",
+      "sre_vp_engineering-v1.json"
+    ],
+    "stakeholder_reaction_rules": [
+      "sre_finance_counts_sla_credits-v1.json",
+      "sre_finance_no_credits-v1.json",
+      "sre_on_call_exhausted-v1.json",
+      "sre_on_call_grateful-v1.json",
+      "sre_product_frustrated_by_slowdown-v1.json",
+      "sre_product_happy_shipping-v1.json",
+      "sre_support_breathes-v1.json",
+      "sre_support_drowning-v1.json",
+      "sre_vp_fears_outages-v1.json",
+      "sre_vp_trusts_steady_service-v1.json"
+    ],
+    "scores": [
+      "sre_availability-v1.json",
+      "sre_change_velocity-v1.json",
+      "sre_customer_trust-v1.json",
+      "sre_error_budget-v1.json",
+      "sre_observability-v1.json",
+      "sre_on_call_rest-v1.json"
+    ],
+    "events": [
+      "sre_alert_storm-v1.json",
+      "sre_bill_review-v1.json",
+      "sre_cascading_failure-v1.json",
+      "sre_certificate_expired-v1.json",
+      "sre_customer_praise-v1.json",
+      "sre_engineer_burns_out-v1.json",
+      "sre_launch_traffic-v1.json",
+      "sre_new_hire_joins-v1.json",
+      "sre_postmortem_shared-v1.json",
+      "sre_quiet_week-v1.json",
+      "sre_region_down-v1.json",
+      "sre_root_cause_by_noon-v1.json",
+      "sre_three_am_outage-v1.json",
+      "sre_vendor_ships_fix-v1.json"
+    ],
+    "delayed_effects": [
+      "sre_canary_confidence-v1.json",
+      "sre_chaos_lessons-v1.json",
+      "sre_rollback_safety_net-v1.json",
+      "sre_runbooks_pay_off-v1.json",
+      "sre_slos_take_hold-v1.json",
+      "sre_toil_receding-v1.json",
+      "sre_tracing_insights-v1.json"
+    ],
+    "outcome_tiers": [],
+    "outcome_archetypes": [
+      "sre_error_budget_accountant-v1.json",
+      "sre_hero_firefighter-v1.json",
+      "sre_pager_haunted-v1.json",
+      "sre_reliability_architect-v1.json",
+      "sre_steady_operator-v1.json",
+      "sre_toil_slayer-v1.json"
+    ],
+    "classes": [
+      "sre_budget_keeper-v1.json",
+      "sre_pager_paladin-v1.json",
+      "sre_signal_seer-v1.json",
+      "sre_toil_druid-v1.json"
+    ],
+    "challenge_modifiers": [
+      "sre_launch_week-v1.json",
+      "sre_skeleton_crew-v1.json"
+    ],
+    "coupling_rules": [
+      "sre_budget_exhausted-v1.json",
+      "sre_burnout_spiral-v1.json",
+      "sre_flying_blind-v1.json"
+    ]
+  }
+}
