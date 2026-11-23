@@ -12,6 +12,7 @@ It is a demo of the most common reason to write a pack: a facilitator wants the 
 | Events | 6, including Critical Bug Discovered | Chargeback Storm, A Letter from the Regulator, Double-Charge Incident, The Audit Dry Run Goes Well |
 | Aftershocks | the ones base cards schedule | Payment Events Become Trustworthy |
 | Endings | all base outcome tiers and endings | none |
+| Coupling | the base pack's three collapses (delivery, morale, trust) | none |
 
 Because it builds on the base pack, its manifest declares `"depends_on": [{ "pack_id": "base", "version": "1.0.0" }]` and uses the GPL-3.0-only license (the base pack's license).
 
@@ -28,6 +29,11 @@ The scenario passes DDDnD's content audit with no critical findings and no warni
 ```text
 https://raw.githubusercontent.com/mooeypoo/DDDnD-packs/<tag>/packs/gilded_ledger/manifest.json
 ```
+
+## Versions
+
+- **1.1.0**: the scenario names the base pack's coupling rules (`coupling_rule_refs`). Until DDDnD made coupling part of content, the engine applied these three collapses to every scenario; now a scenario lists the ones it uses. 1.1.0 plays exactly like 1.0.0 did. Loaded in a DDDnD build with content coupling, 1.0.0 plays with no coupling at all. Needs a DDDnD build with coupling rules (M3).
+- **1.0.0**: first release.
 
 ## Credits and license
 
