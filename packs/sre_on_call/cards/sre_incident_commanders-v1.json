@@ -1,0 +1,38 @@
+{
+  "$schema": "https://dddnd.app/schema/v1/card.schema.json",
+  "id": "sre_incident_commanders",
+  "version": 1,
+  "name": "Train Incident Commanders",
+  "description": "Give incidents one calm person in charge, and a playbook for the chaos.",
+  "flavor_text": "Someone is coordinating. It is not the person typing the fix.",
+  "style_tags": [
+    "learning",
+    "on-call"
+  ],
+  "usage_limit": 1,
+  "score_changes": [
+    {
+      "score_id": "sre_on_call_rest",
+      "delta": 4
+    },
+    {
+      "score_id": "sre_availability",
+      "delta": 3
+    },
+    {
+      "score_id": "sre_customer_trust",
+      "delta": 2
+    },
+    {
+      "score_id": "sre_change_velocity",
+      "delta": -2
+    }
+  ],
+  "stakeholder_changes": [
+    {
+      "stakeholder_id": "sre_vp_engineering",
+      "delta": 1
+    }
+  ],
+  "delayed_effect_refs": []
+}

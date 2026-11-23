@@ -1,0 +1,12 @@
+{
+  "$schema": "https://dddnd.app/schema/v1/challenge-modifier.schema.json",
+  "id": "sre_launch_week",
+  "version": 1,
+  "name": "Launch Week",
+  "description": "A big launch is already scheduled. The error budget starts 15 lower and the on-call 5 lower.",
+  "flavor_text": "Marketing booked the billboard before anyone asked.",
+  "score_adjustments": {
+    "sre_error_budget": -15,
+    "sre_on_call_rest": -5
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "$schema": "https://dddnd.app/schema/v1/card.schema.json",
+  "id": "sre_hero_fix",
+  "version": 1,
+  "name": "Heroic Fix at 3 a.m.",
+  "description": "Someone stays up all night and saves the day. Again.",
+  "flavor_text": "Everyone thanks them in the channel. Nobody asks why it keeps happening.",
+  "style_tags": [
+    "heroics",
+    "short-term"
+  ],
+  "cooldown_turns": 1,
+  "score_changes": [
+    {
+      "score_id": "sre_availability",
+      "delta": 8
+    },
+    {
+      "score_id": "sre_customer_trust",
+      "delta": 4
+    },
+    {
+      "score_id": "sre_on_call_rest",
+      "delta": -6
+    },
+    {
+      "score_id": "sre_observability",
+      "delta": -1
+    }
+  ],
+  "stakeholder_changes": [
+    {
+      "stakeholder_id": "sre_on_call_engineer",
+      "delta": -3
+    },
+    {
+      "stakeholder_id": "sre_vp_engineering",
+      "delta": 2
+    },
+    {
+      "stakeholder_id": "sre_support_lead",
+      "delta": 2
+    }
+  ],
+  "delayed_effect_refs": []
+}

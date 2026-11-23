@@ -1,0 +1,9 @@
+{
+  "$schema": "https://dddnd.app/schema/v1/score.schema.json",
+  "id": "sre_on_call_rest",
+  "version": 1,
+  "name": "Rested On-Call",
+  "short_name": "Rest",
+  "description": "Whether the people holding the pager can sleep, think, and stay.",
+  "default_value": 40
+}

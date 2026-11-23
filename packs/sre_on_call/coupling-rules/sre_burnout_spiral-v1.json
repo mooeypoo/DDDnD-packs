@@ -1,0 +1,14 @@
+{
+  "$schema": "https://dddnd.app/schema/v1/coupling-rule.schema.json",
+  "id": "sre_burnout_spiral",
+  "version": 1,
+  "name": "Burnout Spiral",
+  "description": "Exhausted on-call: availability and observability improvements are less effective.",
+  "trigger_score_id": "sre_on_call_rest",
+  "threshold": 25,
+  "affected_score_ids": [
+    "sre_availability",
+    "sre_observability"
+  ],
+  "gain_multiplier": 0.7
+}

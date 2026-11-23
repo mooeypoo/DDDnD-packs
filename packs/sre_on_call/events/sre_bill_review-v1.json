@@ -1,0 +1,22 @@
+{
+  "$schema": "https://dddnd.app/schema/v1/event.schema.json",
+  "id": "sre_bill_review",
+  "version": 1,
+  "name": "The Quarterly Cloud Bill",
+  "description": "Finance reviews the cloud bill, line by line, out loud.",
+  "flavor_text": "\"What is a NAT gateway, and why do we have eleven?\"",
+  "occurrence_weight": 2,
+  "score_changes": [
+    {
+      "score_id": "sre_change_velocity",
+      "delta": -1
+    }
+  ],
+  "stakeholder_changes": [
+    {
+      "stakeholder_id": "sre_finance_director",
+      "delta": -4
+    }
+  ],
+  "delayed_effect_refs": []
+}

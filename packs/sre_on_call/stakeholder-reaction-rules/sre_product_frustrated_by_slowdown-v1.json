@@ -1,0 +1,22 @@
+{
+  "$schema": "https://dddnd.app/schema/v1/stakeholder-reaction-rule.schema.json",
+  "id": "sre_product_frustrated_by_slowdown",
+  "version": 1,
+  "name": "Product Frustrated by the Slowdown",
+  "description": "Every freeze and review pushes a promised launch back.",
+  "condition_description": "Change velocity < 40",
+  "condition": {
+    "target_type": "score",
+    "target_id": "sre_change_velocity",
+    "operator": "<",
+    "value": 40
+  },
+  "priority": 10,
+  "score_changes": [],
+  "stakeholder_changes": [
+    {
+      "stakeholder_id": "sre_product_lead",
+      "delta": -5
+    }
+  ]
+}

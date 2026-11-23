@@ -1,0 +1,19 @@
+{
+  "$schema": "https://dddnd.app/schema/v1/outcome-archetype.schema.json",
+  "id": "sre_pager_haunted",
+  "version": 1,
+  "name": "Pager-Haunted",
+  "description": "The service survived, but the on-call rotation didn't come out whole.",
+  "flavor_text": "They still flinch when a phone buzzes.",
+  "criteria": {
+    "priority": 80,
+    "when": [
+      {
+        "measure": "final_score",
+        "score_id": "sre_on_call_rest",
+        "operator": "<",
+        "value": 25
+      }
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "https://dddnd.app/schema/v1/stakeholder-reaction-rule.schema.json",
+  "id": "sre_support_breathes",
+  "version": 1,
+  "name": "Support Breathes Again",
+  "description": "Customers stop opening tickets \"just to check\".",
+  "condition_description": "Customer trust > 65",
+  "condition": {
+    "target_type": "score",
+    "target_id": "sre_customer_trust",
+    "operator": ">",
+    "value": 65
+  },
+  "priority": 50,
+  "score_changes": [],
+  "stakeholder_changes": [
+    {
+      "stakeholder_id": "sre_support_lead",
+      "delta": 3
+    }
+  ]
+}

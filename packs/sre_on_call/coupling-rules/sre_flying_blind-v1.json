@@ -1,0 +1,13 @@
+{
+  "$schema": "https://dddnd.app/schema/v1/coupling-rule.schema.json",
+  "id": "sre_flying_blind",
+  "version": 1,
+  "name": "Flying Blind",
+  "description": "Without observability, fixes miss their target: availability improvements are less effective.",
+  "trigger_score_id": "sre_observability",
+  "threshold": 20,
+  "affected_score_ids": [
+    "sre_availability"
+  ],
+  "gain_multiplier": 0.75
+}

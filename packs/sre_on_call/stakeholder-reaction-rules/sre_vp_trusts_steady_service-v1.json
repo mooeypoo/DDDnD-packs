@@ -1,0 +1,22 @@
+{
+  "$schema": "https://dddnd.app/schema/v1/stakeholder-reaction-rule.schema.json",
+  "id": "sre_vp_trusts_steady_service",
+  "version": 1,
+  "name": "VP Trusts a Steady Service",
+  "description": "A boring, reliable quarter earns the VP's backing.",
+  "condition_description": "Availability > 65",
+  "condition": {
+    "target_type": "score",
+    "target_id": "sre_availability",
+    "operator": ">",
+    "value": 65
+  },
+  "priority": 50,
+  "score_changes": [],
+  "stakeholder_changes": [
+    {
+      "stakeholder_id": "sre_vp_engineering",
+      "delta": 3
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "https://dddnd.app/schema/v1/outcome-archetype.schema.json",
+  "id": "sre_reliability_architect",
+  "version": 1,
+  "name": "The Reliability Architect",
+  "description": "You made the system reliable by design, not by heroics, and the people stayed rested.",
+  "flavor_text": "The best incident is the one the architecture never let happen.",
+  "criteria": {
+    "priority": 70,
+    "when": [
+      {
+        "measure": "score_change",
+        "score_ids": [
+          "sre_availability",
+          "sre_observability"
+        ],
+        "operator": ">=",
+        "value": 32
+      },
+      {
+        "measure": "final_score",
+        "score_id": "sre_on_call_rest",
+        "operator": ">=",
+        "value": 50
+      }
+    ]
+  }
+}

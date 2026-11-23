@@ -1,0 +1,38 @@
+{
+  "$schema": "https://dddnd.app/schema/v1/card.schema.json",
+  "id": "sre_ship_anyway",
+  "version": 1,
+  "name": "Ship the Feature Anyway",
+  "description": "The launch date was promised. The error budget will have to cope.",
+  "flavor_text": "It's fine. It's behind a flag. Mostly.",
+  "style_tags": [
+    "delivery",
+    "short-term"
+  ],
+  "cooldown_turns": 1,
+  "score_changes": [
+    {
+      "score_id": "sre_change_velocity",
+      "delta": 8
+    },
+    {
+      "score_id": "sre_customer_trust",
+      "delta": 3
+    },
+    {
+      "score_id": "sre_error_budget",
+      "delta": -5
+    },
+    {
+      "score_id": "sre_availability",
+      "delta": -2
+    }
+  ],
+  "stakeholder_changes": [
+    {
+      "stakeholder_id": "sre_product_lead",
+      "delta": 5
+    }
+  ],
+  "delayed_effect_refs": []
+}

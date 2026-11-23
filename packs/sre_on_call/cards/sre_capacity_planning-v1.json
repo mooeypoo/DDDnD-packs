@@ -1,0 +1,35 @@
+{
+  "$schema": "https://dddnd.app/schema/v1/card.schema.json",
+  "id": "sre_capacity_planning",
+  "version": 1,
+  "name": "Do Capacity Planning",
+  "description": "Forecast the growth before it arrives, and buy headroom.",
+  "flavor_text": "The traffic graph only goes one way, and it isn't down.",
+  "style_tags": [
+    "planning",
+    "reliability"
+  ],
+  "usage_limit": 2,
+  "cooldown_turns": 1,
+  "score_changes": [
+    {
+      "score_id": "sre_availability",
+      "delta": 5
+    },
+    {
+      "score_id": "sre_error_budget",
+      "delta": 3
+    },
+    {
+      "score_id": "sre_change_velocity",
+      "delta": -1
+    }
+  ],
+  "stakeholder_changes": [
+    {
+      "stakeholder_id": "sre_finance_director",
+      "delta": -2
+    }
+  ],
+  "delayed_effect_refs": []
+}

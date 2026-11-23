@@ -1,0 +1,9 @@
+{
+  "$schema": "https://dddnd.app/schema/v1/class.schema.json",
+  "id": "sre_toil_druid",
+  "version": 1,
+  "name": "Toil Druid",
+  "description": "Tends the rotation like a garden: prune the alerts, and the people grow back.",
+  "flavor_text": "Every script you write gives someone an evening back.",
+  "score_affinity": "sre_on_call_rest"
+}

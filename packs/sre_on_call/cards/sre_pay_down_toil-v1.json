@@ -1,0 +1,40 @@
+{
+  "$schema": "https://dddnd.app/schema/v1/card.schema.json",
+  "id": "sre_pay_down_toil",
+  "version": 1,
+  "name": "Pay Down Toil",
+  "description": "Automate the manual, repetitive work that grows with the service.",
+  "flavor_text": "If a human does it every week, a script can do it every minute.",
+  "style_tags": [
+    "automation",
+    "on-call"
+  ],
+  "usage_limit": 2,
+  "cooldown_turns": 1,
+  "score_changes": [
+    {
+      "score_id": "sre_on_call_rest",
+      "delta": 6
+    },
+    {
+      "score_id": "sre_observability",
+      "delta": 2
+    },
+    {
+      "score_id": "sre_change_velocity",
+      "delta": -2
+    }
+  ],
+  "stakeholder_changes": [
+    {
+      "stakeholder_id": "sre_on_call_engineer",
+      "delta": 3
+    }
+  ],
+  "delayed_effect_refs": [
+    {
+      "id": "sre_toil_receding",
+      "version": 1
+    }
+  ]
+}

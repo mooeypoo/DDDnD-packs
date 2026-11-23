@@ -1,0 +1,42 @@
+{
+  "$schema": "https://dddnd.app/schema/v1/card.schema.json",
+  "id": "sre_blameless_postmortem",
+  "version": 1,
+  "name": "Hold a Blameless Postmortem",
+  "description": "Study the last incident for what the system allowed, not who pressed the button.",
+  "flavor_text": "The question is \"how did this make sense at the time?\"",
+  "style_tags": [
+    "learning",
+    "culture"
+  ],
+  "cooldown_turns": 1,
+  "score_changes": [
+    {
+      "score_id": "sre_on_call_rest",
+      "delta": 4
+    },
+    {
+      "score_id": "sre_observability",
+      "delta": 5
+    },
+    {
+      "score_id": "sre_customer_trust",
+      "delta": 2
+    },
+    {
+      "score_id": "sre_change_velocity",
+      "delta": -2
+    }
+  ],
+  "stakeholder_changes": [
+    {
+      "stakeholder_id": "sre_on_call_engineer",
+      "delta": 3
+    },
+    {
+      "stakeholder_id": "sre_vp_engineering",
+      "delta": 1
+    }
+  ],
+  "delayed_effect_refs": []
+}

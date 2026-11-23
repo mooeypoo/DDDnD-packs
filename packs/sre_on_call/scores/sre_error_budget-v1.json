@@ -1,0 +1,9 @@
+{
+  "$schema": "https://dddnd.app/schema/v1/score.schema.json",
+  "id": "sre_error_budget",
+  "version": 1,
+  "name": "Error Budget",
+  "short_name": "Err budget",
+  "description": "How much unreliability is left to spend this quarter before the SLO is broken.",
+  "default_value": 45
+}

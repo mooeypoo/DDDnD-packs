@@ -1,0 +1,25 @@
+{
+  "$schema": "https://dddnd.app/schema/v1/event.schema.json",
+  "id": "sre_region_down",
+  "version": 1,
+  "name": "A Cloud Region Goes Down",
+  "description": "The provider loses a whole region. Your failover gets its first real test.",
+  "flavor_text": "The provider's status page is still green.",
+  "occurrence_weight": 2,
+  "score_changes": [
+    {
+      "score_id": "sre_availability",
+      "delta": -4
+    },
+    {
+      "score_id": "sre_error_budget",
+      "delta": -5
+    },
+    {
+      "score_id": "sre_customer_trust",
+      "delta": -1
+    }
+  ],
+  "stakeholder_changes": [],
+  "delayed_effect_refs": []
+}

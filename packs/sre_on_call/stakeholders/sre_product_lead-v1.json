@@ -1,0 +1,17 @@
+{
+  "$schema": "https://dddnd.app/schema/v1/stakeholder.schema.json",
+  "id": "sre_product_lead",
+  "version": 1,
+  "name": "Product Lead",
+  "description": "Owns the roadmap and the launch dates promised to customers.",
+  "reaction_rule_refs": [
+    {
+      "id": "sre_product_frustrated_by_slowdown",
+      "version": 1
+    },
+    {
+      "id": "sre_product_happy_shipping",
+      "version": 1
+    }
+  ]
+}

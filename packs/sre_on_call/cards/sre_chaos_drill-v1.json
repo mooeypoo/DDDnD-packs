@@ -1,0 +1,44 @@
+{
+  "$schema": "https://dddnd.app/schema/v1/card.schema.json",
+  "id": "sre_chaos_drill",
+  "version": 1,
+  "name": "Run a Chaos Drill",
+  "description": "Break something on purpose, in daylight, with everyone watching.",
+  "flavor_text": "Better to meet the failure at 2 p.m. than at 2 a.m.",
+  "style_tags": [
+    "learning",
+    "reliability"
+  ],
+  "usage_limit": 2,
+  "cooldown_turns": 2,
+  "score_changes": [
+    {
+      "score_id": "sre_observability",
+      "delta": 6
+    },
+    {
+      "score_id": "sre_availability",
+      "delta": -2
+    },
+    {
+      "score_id": "sre_error_budget",
+      "delta": -2
+    },
+    {
+      "score_id": "sre_on_call_rest",
+      "delta": -1
+    }
+  ],
+  "stakeholder_changes": [
+    {
+      "stakeholder_id": "sre_vp_engineering",
+      "delta": 2
+    }
+  ],
+  "delayed_effect_refs": [
+    {
+      "id": "sre_chaos_lessons",
+      "version": 1
+    }
+  ]
+}

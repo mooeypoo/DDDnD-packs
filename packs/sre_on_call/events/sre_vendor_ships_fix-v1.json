@@ -1,0 +1,21 @@
+{
+  "$schema": "https://dddnd.app/schema/v1/event.schema.json",
+  "id": "sre_vendor_ships_fix",
+  "version": 1,
+  "name": "The Vendor Ships the Fix",
+  "description": "The database bug you reported months ago is finally fixed upstream.",
+  "flavor_text": "The ticket was older than some of the team.",
+  "occurrence_weight": 2,
+  "score_changes": [
+    {
+      "score_id": "sre_availability",
+      "delta": 4
+    },
+    {
+      "score_id": "sre_error_budget",
+      "delta": 2
+    }
+  ],
+  "stakeholder_changes": [],
+  "delayed_effect_refs": []
+}

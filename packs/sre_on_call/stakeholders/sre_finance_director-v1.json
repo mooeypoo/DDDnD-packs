@@ -1,0 +1,17 @@
+{
+  "$schema": "https://dddnd.app/schema/v1/stakeholder.schema.json",
+  "id": "sre_finance_director",
+  "version": 1,
+  "name": "Finance Director",
+  "description": "Pays the cloud bill and the SLA credits, and would like fewer of both.",
+  "reaction_rule_refs": [
+    {
+      "id": "sre_finance_counts_sla_credits",
+      "version": 1
+    },
+    {
+      "id": "sre_finance_no_credits",
+      "version": 1
+    }
+  ]
+}

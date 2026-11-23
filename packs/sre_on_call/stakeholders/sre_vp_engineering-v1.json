@@ -1,0 +1,17 @@
+{
+  "$schema": "https://dddnd.app/schema/v1/stakeholder.schema.json",
+  "id": "sre_vp_engineering",
+  "version": 1,
+  "name": "VP of Engineering",
+  "description": "Answers to the board for every outage, and to the teams for every feature.",
+  "reaction_rule_refs": [
+    {
+      "id": "sre_vp_fears_outages",
+      "version": 1
+    },
+    {
+      "id": "sre_vp_trusts_steady_service",
+      "version": 1
+    }
+  ]
+}

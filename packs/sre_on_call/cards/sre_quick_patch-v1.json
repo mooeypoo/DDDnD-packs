@@ -1,0 +1,38 @@
+{
+  "$schema": "https://dddnd.app/schema/v1/card.schema.json",
+  "id": "sre_quick_patch",
+  "version": 1,
+  "name": "Patch It and Move On",
+  "description": "A small fix, no follow-up ticket, back to the roadmap.",
+  "flavor_text": "We'll write the postmortem later. We won't.",
+  "style_tags": [
+    "short-term",
+    "delivery"
+  ],
+  "cooldown_turns": 1,
+  "score_changes": [
+    {
+      "score_id": "sre_availability",
+      "delta": 4
+    },
+    {
+      "score_id": "sre_change_velocity",
+      "delta": 4
+    },
+    {
+      "score_id": "sre_observability",
+      "delta": -2
+    },
+    {
+      "score_id": "sre_on_call_rest",
+      "delta": -2
+    }
+  ],
+  "stakeholder_changes": [
+    {
+      "stakeholder_id": "sre_product_lead",
+      "delta": 2
+    }
+  ],
+  "delayed_effect_refs": []
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "https://dddnd.app/schema/v1/stakeholder-reaction-rule.schema.json",
+  "id": "sre_finance_no_credits",
+  "version": 1,
+  "name": "No SLA Credits This Quarter",
+  "description": "Finance notices that nothing was paid back.",
+  "condition_description": "Error budget > 60",
+  "condition": {
+    "target_type": "score",
+    "target_id": "sre_error_budget",
+    "operator": ">",
+    "value": 60
+  },
+  "priority": 50,
+  "score_changes": [],
+  "stakeholder_changes": [
+    {
+      "stakeholder_id": "sre_finance_director",
+      "delta": 3
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "$schema": "https://dddnd.app/schema/v1/delayed-effect.schema.json",
+  "id": "sre_canary_confidence",
+  "version": 1,
+  "name": "Confidence in Canaries",
+  "description": "Small, watched releases make shipping feel safe again.",
+  "turns_until_resolution": 2,
+  "score_changes": [
+    {
+      "score_id": "sre_change_velocity",
+      "delta": 5
+    },
+    {
+      "score_id": "sre_error_budget",
+      "delta": 2
+    }
+  ]
+}

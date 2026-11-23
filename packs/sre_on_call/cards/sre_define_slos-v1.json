@@ -1,0 +1,43 @@
+{
+  "$schema": "https://dddnd.app/schema/v1/card.schema.json",
+  "id": "sre_define_slos",
+  "version": 1,
+  "name": "Define SLOs with Product",
+  "description": "Agree with product on what \"reliable enough\" means, in numbers customers would recognize.",
+  "flavor_text": "\"Five nines\" was never a requirement. It was a mood.",
+  "style_tags": [
+    "process",
+    "reliability"
+  ],
+  "usage_limit": 1,
+  "score_changes": [
+    {
+      "score_id": "sre_observability",
+      "delta": 4
+    },
+    {
+      "score_id": "sre_error_budget",
+      "delta": 5
+    },
+    {
+      "score_id": "sre_customer_trust",
+      "delta": 3
+    },
+    {
+      "score_id": "sre_change_velocity",
+      "delta": -2
+    }
+  ],
+  "stakeholder_changes": [
+    {
+      "stakeholder_id": "sre_product_lead",
+      "delta": 2
+    }
+  ],
+  "delayed_effect_refs": [
+    {
+      "id": "sre_slos_take_hold",
+      "version": 1
+    }
+  ]
+}

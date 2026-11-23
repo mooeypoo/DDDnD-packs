@@ -13,6 +13,7 @@ This repository holds packs published outside the game itself: demos that show w
 | Pack | Folder | Kind | What it is |
 |---|---|---|---|
 | Demo: The Gilded Ledger | [`packs/gilded_ledger`](packs/gilded_ledger) | `extension` of the base pack | The monolith story retold for a fictional payments company, built on the base pack's scores, cards, and endings. A model for the most common workshop use: "our system, our stakeholders, our politics". |
+| SRE: The Pager Storm | [`packs/sre_on_call`](packs/sre_on_call) | `extension` of the base pack | A second domain: site reliability engineering and incident response, with its own scores, council, cards, events, endings, classes and challenge modifiers (only the outcome tiers come from the base pack). A model for taking the game somewhere new. |
 
 Being in this repository does not mean a pack is endorsed by DDDnD. If DDDnD ever endorses packs, that list will live in the [official DDDnD repository](https://github.com/mooeypoo/DDDnD), where nobody outside the project can edit it.
 

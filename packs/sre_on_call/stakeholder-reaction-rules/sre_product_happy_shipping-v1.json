@@ -1,0 +1,22 @@
+{
+  "$schema": "https://dddnd.app/schema/v1/stakeholder-reaction-rule.schema.json",
+  "id": "sre_product_happy_shipping",
+  "version": 1,
+  "name": "Product Happy to Be Shipping",
+  "description": "Features are landing on time again.",
+  "condition_description": "Change velocity > 65",
+  "condition": {
+    "target_type": "score",
+    "target_id": "sre_change_velocity",
+    "operator": ">",
+    "value": 65
+  },
+  "priority": 50,
+  "score_changes": [],
+  "stakeholder_changes": [
+    {
+      "stakeholder_id": "sre_product_lead",
+      "delta": 4
+    }
+  ]
+}

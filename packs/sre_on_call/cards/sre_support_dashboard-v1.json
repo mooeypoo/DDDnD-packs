@@ -1,0 +1,34 @@
+{
+  "$schema": "https://dddnd.app/schema/v1/card.schema.json",
+  "id": "sre_support_dashboard",
+  "version": 1,
+  "name": "Give Support Their Own Dashboard",
+  "description": "Let support see the service's health without asking an engineer.",
+  "flavor_text": "Support stopped asking \"is it down?\" and started telling us.",
+  "style_tags": [
+    "observability",
+    "communication"
+  ],
+  "usage_limit": 1,
+  "score_changes": [
+    {
+      "score_id": "sre_customer_trust",
+      "delta": 4
+    },
+    {
+      "score_id": "sre_observability",
+      "delta": 3
+    },
+    {
+      "score_id": "sre_change_velocity",
+      "delta": -1
+    }
+  ],
+  "stakeholder_changes": [
+    {
+      "stakeholder_id": "sre_support_lead",
+      "delta": 4
+    }
+  ],
+  "delayed_effect_refs": []
+}

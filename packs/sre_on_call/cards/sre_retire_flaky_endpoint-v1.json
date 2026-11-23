@@ -1,0 +1,38 @@
+{
+  "$schema": "https://dddnd.app/schema/v1/card.schema.json",
+  "id": "sre_retire_flaky_endpoint",
+  "version": 1,
+  "name": "Retire the Flaky Legacy Endpoint",
+  "description": "Turn off the old API that pages someone every week.",
+  "flavor_text": "Three customers still use it. All three are very loud.",
+  "style_tags": [
+    "cleanup",
+    "reliability"
+  ],
+  "usage_limit": 1,
+  "score_changes": [
+    {
+      "score_id": "sre_availability",
+      "delta": 4
+    },
+    {
+      "score_id": "sre_on_call_rest",
+      "delta": 4
+    },
+    {
+      "score_id": "sre_customer_trust",
+      "delta": -2
+    },
+    {
+      "score_id": "sre_change_velocity",
+      "delta": -1
+    }
+  ],
+  "stakeholder_changes": [
+    {
+      "stakeholder_id": "sre_support_lead",
+      "delta": -3
+    }
+  ],
+  "delayed_effect_refs": []
+}

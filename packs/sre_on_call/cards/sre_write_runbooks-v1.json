@@ -1,0 +1,39 @@
+{
+  "$schema": "https://dddnd.app/schema/v1/card.schema.json",
+  "id": "sre_write_runbooks",
+  "version": 1,
+  "name": "Write Runbooks for the Loudest Alerts",
+  "description": "Turn tribal knowledge into steps anyone on the rotation can follow.",
+  "flavor_text": "Step one: do not panic. Step two is longer.",
+  "style_tags": [
+    "documentation",
+    "on-call"
+  ],
+  "usage_limit": 1,
+  "score_changes": [
+    {
+      "score_id": "sre_on_call_rest",
+      "delta": 5
+    },
+    {
+      "score_id": "sre_availability",
+      "delta": 3
+    },
+    {
+      "score_id": "sre_change_velocity",
+      "delta": -2
+    }
+  ],
+  "stakeholder_changes": [
+    {
+      "stakeholder_id": "sre_on_call_engineer",
+      "delta": 3
+    }
+  ],
+  "delayed_effect_refs": [
+    {
+      "id": "sre_runbooks_pay_off",
+      "version": 1
+    }
+  ]
+}
