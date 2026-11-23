@@ -6,7 +6,7 @@ A **content pack** is a folder of JSON files (scenarios, cards, stakeholders, ev
 
 This repository holds packs published outside the game itself: demos that show what a pack can do, and, over time, other examples and working packs that facilitators can use in their own workshops.
 
-> **Status:** loading packs into the game is still in development. It is switched off on dddnd.app until it is ready. The packs here are built and checked against the same rules the game will use.
+> **Status:** community packs are live on [dddnd.app](https://dddnd.app). Open the **Community bazaar** from the lobby, or import a pack from its link. The game's bazaar also suggests the two packs here as examples.
 
 ## Packs in this repository
 
